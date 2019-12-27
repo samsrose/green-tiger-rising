@@ -1,52 +1,39 @@
 ---
 title: Home
 sections:
-  - type: heroblock
-    title: 'Hi, I''m Stackbit Exto Portfolio Theme.'
+  - component: HeroBlock
+    content: Full-stack Web Engineer & UX Developer
     section_id: hero
-    component: HeroBlock
-    content: >-
-      This section can contain a subtitle or tagline. The recommended length is
-      one to three sentences, but can be changed as you prefer.
-  - type: portfolioblock
-    title: Recent Work
+    title: Sam Rose
+    type: heroblock
+  - component: PortfolioBlock
+    layout_style: tiles
+    num_projects_displayed: 4
     section_id: latest-projects
-    component: PortfolioBlock
-    subtitle: An optional subtitle of the section
-    layout_style: mosaic
-    num_projects_displayed: 6
+    subtitle: ''
+    title: Recent Projects
+    type: portfolioblock
     view_all_text: View All
     view_all_url: portfolio/index.html
-  - type: servicesblock
-    title: What We Do
+  - component: ServicesBlock
     section_id: services
-    component: ServicesBlock
-    subtitle: An optional subtitle of the section
     serviceslist:
-      - title: Service Title
-        content: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl
-          ligula, cursus id molestie vel, maximus aliquet risus. Vivamus in nibh
-          fringilla, fringilla tortor at, pulvinar orci.
-      - title: Service Title
-        content: >-
-          Donec lobortis velit sed suscipit lobortis. Ut non quam metus. Nullam
-          a maximus mi. Quisque justo nunc, sollicitudin euismod euismod at,
-          tincidunt ut tellus. Vivamus rhoncus mattis varius. 
-      - title: Service title
-        content: >-
-          Vestibulum a nunc ut eros condimentum posuere. Nullam dapibus quis
-          nunc non interdum. Pellentesque tortor ligula, gravida ac commodo eu.
-      - title: Service title
-        content: >-
+      - content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        title: Front End
+      - content: Donec lobortis velit sed suscipit lobortis. Ut non quam metus.
+        title: Back End
+      - content: Vestibulum a nunc ut eros condimentum posuere.
+        title: Learning & Instructing
+      - content: >-
           Aliquam pulvinar, orci ac scelerisque tempus, felis leo sagittis
-          justo, sit amet condimentum lorem nibh vel quam. Duis consectetur
-          lorem ipsum, non efficitur urna viverra et.
-  - type: testimonialsblock
-    title: Testimonials
-    section_id: testimonials
-    component: TestimonialsBlock
-    subtitle: An optional subtitle of the section
+          justo.
+        title: User Experience Design
+    subtitle: ''
+    title: Specialization
+    type: servicesblock
+  - component: TestimonialsBlock
+    section_id: endorsements
+    subtitle: some skills endorsed by my linkedin connections
     testimonialslist:
       - author: John Doe
         avatar: images/john_doe.jpg
@@ -59,23 +46,26 @@ sections:
           Sed laoreet magna commodo libero euismod sodales. Nunc ac libero
           convallis, interdum ligula vel, pretium diam. Integer commodo sem at
           dui sollicitudin, vel posuere justo laoreet.
-  - type: postsblock
-    title: Latest from the Blog
-    section_id: latest-posts
-    component: PostsBlock
-    subtitle: An optional subtitle of the section
-    num_posts_displayed: 2
-    actions:
+    title: LinkedIn Endorsements
+    type: testimonialsblock
+  - actions:
       - label: View Blog
         url: blog/index.html
-  - type: contactblock
-    title: Contact Us
+    component: PostsBlock
+    num_posts_displayed: 2
+    section_id: latest-posts
+    subtitle: Optimized for short attention spans
+    title: 'Stream of Consciousness '
+    type: postsblock
+  - component: ContactBlock
     section_id: contact
-    component: ContactBlock
-    subtitle: An optional subtitle of the section
+    subtitle: Let's make something bold.
+    title: Contact Me
+    type: contactblock
 menus:
   main:
-    title: Home
+    title: Main
     weight: 1
 template: home
 ---
+
